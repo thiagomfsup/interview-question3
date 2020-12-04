@@ -1,0 +1,11 @@
+** How to compile this project and run tests?
+
+    Run "mvn verify" in order to compile, package and run all unit tests.
+
+** How to run this project?
+
+    - Using spring-boot-maven-plugin:
+         Run "mvn spring-boot:run".
+
+    - Using the executable JAR file:
+        This project generates a executable JAR once the package Maven goal is executed. If you have already packaged this project, you can run it by executing "java -jar demo-<CURRENT_VERSION>.jar". Do not forget to change CURRECT_VERSION to the project's current version.
