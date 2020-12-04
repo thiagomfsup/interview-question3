@@ -29,6 +29,13 @@ public class ForumService {
         return retrieveAQuestion(questionId);
     }
 
+    /**
+     * Retrieve a question based on the <code>questionId<code> parameter.
+     * 
+     * @param questionId The question identifier.
+     * @throws RecordNotFoundException if a question does not exist in the database.
+     * @return
+     */
     private QuestionEntity retrieveAQuestion(Long questionId) {
         Optional<QuestionEntity> question = questionRepository.findById(questionId);
 
